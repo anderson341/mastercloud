@@ -1,0 +1,12 @@
+{
+	"name": "RestService1",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=cbav3.SA&apikey=SDVQZIA8C82V5TUN",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
