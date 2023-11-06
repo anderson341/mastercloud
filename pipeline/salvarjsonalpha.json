@@ -75,10 +75,8 @@
 		},
 		"variables": {
 			"tickets": {
-				"type": "Array",
-				"defaultValue": [
-					"BBDC4.SA"
-				]
+				"type": "String",
+				"defaultValue": "BBDC4.SA"
 			}
 		},
 		"folder": {
