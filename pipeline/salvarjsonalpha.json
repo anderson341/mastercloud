@@ -38,7 +38,17 @@
 				"inputs": [
 					{
 						"referenceName": "dsRest",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"apykey": {
+								"value": "@pipeline().parameters.apikey",
+								"type": "Expression"
+							},
+							"ticket": {
+								"value": "@variables('tickets')",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -47,7 +57,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"camada": {
-								"value": "@concat(pipeline().parameters.camada_1)",
+								"value": "@concat(pipeline().parameters.camada_2)",
 								"type": "Expression"
 							}
 						}
@@ -70,16 +80,13 @@
 			},
 			"apikey": {
 				"type": "string",
-				"defaultValue": "@linkedService(\\\"kvmasatercloucn\\\").secret.alphatavantage1\\"
+				"defaultValue": "@linkedService(\\\"kvmasatercloudanderson\\\").secret.alphatavantage1\\"
 			}
 		},
 		"variables": {
 			"tickets": {
-				"type": "Array",
-				"defaultValue": [
-					"AAPL",
-					"MSFT"
-				]
+				"type": "String",
+				"defaultValue": "AAPL"
 			}
 		},
 		"folder": {
