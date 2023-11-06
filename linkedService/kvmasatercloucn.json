@@ -1,0 +1,10 @@
+{
+	"name": "kvmasatercloucn",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kvmasatercloudanderson.vault.azure.net/"
+		}
+	}
+}
