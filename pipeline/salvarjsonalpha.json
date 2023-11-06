@@ -64,7 +64,7 @@
 			},
 			"apikey": {
 				"type": "string",
-				"defaultValue": "@linkedService(\\\"kvmasatercloudanderson\\\").secret.alphatavantage1\\"
+				"defaultValue": "@linkedService(\\\"kvmasatercloucn\\\").secret.alphatavantage1\\"
 			}
 		},
 		"variables": {
