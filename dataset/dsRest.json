@@ -1,0 +1,15 @@
+{
+	"name": "dsRest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestService1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Pratica2"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
